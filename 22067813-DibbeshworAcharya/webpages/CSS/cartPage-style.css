@@ -1,0 +1,83 @@
+/* setting the size of the main table which has all the products and other details  */
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* setting the color and position of table head  */
+th {
+  text-align: left;
+  padding: 8px;
+  color: white;
+  background-color: #00674B;
+  font-weight: bold;
+}
+
+/* adding padding to table data  */
+td {
+  padding: 10px 5px;
+}
+
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-info img {
+  width: 300px;
+}
+
+#quantity {
+  width: 50px;
+}
+
+.product-details {
+  margin-left: 12px;
+}
+
+.product-details p {
+  font-weight: bold;
+}
+
+.product-details a {
+  text-decoration: none;
+  color: orange;
+  font-size: small;
+  margin-top: auto;
+}
+
+/* this div wraps the checkout and hire buttons  */
+.checkout-container {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.checkout-container a {
+  text-decoration: none;
+  color: green;
+}
+
+.checkout-container button {
+  color: white;
+  background-color: #00674B;
+  width: 100px;
+  height: 50px;
+  border-radius: 18px;
+}
+
+.checkout-container button:hover {
+  background-color: rgba(0, 103, 75, 0.9);
+}
+
+.checkout-container button:active {
+  background-color: #00674B;
+}

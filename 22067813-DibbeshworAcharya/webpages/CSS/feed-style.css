@@ -1,0 +1,107 @@
+
+/*To align all the items inside the section tag*/
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 20px;
+}
+
+    /*styling the back and next buttons*/
+    .back,
+    .next {
+        cursor: pointer;
+        width: auto;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 30px;
+        color: #00674b;
+        transition: 0.3s ease;
+        border-radius: 0px 3px 3px 0px;
+    }
+
+    /* adding hover effects to the previous and next button  */
+    .back:hover,
+    .next:hover {
+        background-color: rgba(0,0,0,0.2);
+    }
+
+        /* post container wraps the entireity of feed post  */
+    .post-container {
+        display: none;
+        margin-top: 50px;
+        margin-bottom: 90px;
+        position: relative;
+        background-color: #f6f6f6;
+        height: 700px;
+        width: 1400px;
+        box-shadow: 6px 8px 5px rgba(0, 0, 0, 0.2);
+        overflow:visible;
+    }
+
+        /* post content is the text part */
+
+        .post-content {
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            background: white;
+            box-shadow: 4px 4px 4px rgba(0,0,0, 0.1);
+            padding: 30px 20px;
+            top: 470px;
+            z-index: 50;
+        }
+
+            /* post interaction contains the buttons  */
+            .post-interaction button {
+                width: 100px;
+                height: 40px;   
+                color: black;
+                background-color: #f6f6f6;
+                border: none;
+                box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+            }
+
+            /* adding hover effects to button  */
+            .post-interaction button:hover {
+                background-color: #00674b;
+                color: white;
+                text-emphasis: bold ;
+            }
+
+            /* adding animation when button is pressed  */
+            .post-interaction button:active {
+                box-shadow: 0px 0px;
+                transform: translate(4px, 4px);
+            }
+
+            /* positioning the buttons  */
+            .post-interaction {
+                position: absolute;
+                display: flex;
+                gap: 30px;
+                top: 250px;
+                left: 240px;
+            }
+
+            /* setting the height and widith of the photo  */
+            .post-photo {
+                position: absolute;
+                top: 0;
+                left: 200px;
+                width: 1200px;
+                height: 700px;
+                transition: 0.3s ease-in-out;
+            }
+
+            /* to add this class and make content visible  */
+            .active{
+                display: block;
+            }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,135 @@
+/* making the form stay slightly to the left  */
+section {
+  float: left;
+  margin-left: 20%;
+}
+
+/* setting the color widith and other property of the form  */
+.feedback-form {
+  color: black;
+  border: solid 2px black;
+  height: 700px;
+  width: 700px;
+  margin: auto;
+  margin-top: 64px;
+  background-color: rgba(233, 227, 227, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* making sure that the form fields are arranged vertically  */
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+/* setting the color and style of input boxes  */
+.feedback-form form input,
+.feedback-form form textarea {
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: transparent;
+  border: solid 1px black;
+  resize: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* adding hover effects to the input area  */
+.feedback-form form input:hover,
+.feedback-form form textarea:hover {
+  border-bottom: 2px solid black;
+}
+
+/* chaning the style of the placeholder text  */
+.feedback-form form input::placeholder,
+.feedback-form form textarea::placeholder {
+  position: absolute;
+  top: 5%;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#comment {
+  size: 100;
+}
+
+/* arranging the radio checkbox horizontally using flex  */
+.feedback-type {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+/* arranging this horizontally  */
+.feedback-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* removing any default margin and padding from checkbox  */
+.feedback-checkbox input {
+  margin: 0 5px;
+  padding: 0;
+}
+
+/* changing the font size and color of large text area  */
+.feedback-checkbox label {
+  font-size: 20px;
+  color: black;
+}
+
+/* arranging the emojis horizontally  */
+.rating {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* removing all styling from buttons  */
+.rating button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* adding some delay to emoji transition  */
+.rating img {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* hover effect in emojis  */
+.rating img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* default opacity for emoji  */
+.rating img {
+  opacity: 0.5;
+}
+
+/* default opacity for happy rating  */
+#happyRating {
+  opacity: 1;
+}
+
+/* setting the style of submit button  */
+.submit-button {
+  width: 150px;
+  margin-top: 50px;
+  transition: transform 0.2s ease-in-out;
+  background-color: aliceblue;
+}
+
+/* adding hover effects on submit button  */
+.submit-button:hover {
+  transform: scale(1.1, 1.1);
+}

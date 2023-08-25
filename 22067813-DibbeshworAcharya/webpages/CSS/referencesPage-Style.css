@@ -1,0 +1,62 @@
+/* to make sure that all the items are properly aligned  */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* this houses the image div and the text div  */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 40px;
+    /*justify-content: center;
+    align-items: flex-start ;
+    gap: 40px;*/
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3); 
+    height:auto;
+    align-items: center;
+}
+
+/* this makes sure that images start from the top of main container */
+.imgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    gap: 40px;
+
+}
+
+/* setting the width of image and smoothing the transition */
+.mainContainer img {
+    width: 45%;
+    transition: 0.3s ease-in-out;
+}
+
+/* hover effects for left and right image  */
+.img-left:hover {
+    transform: translate(300px, 150px) scale(1.8);
+    margin-bottom: 300px;
+    margin-right: 100px;
+}
+
+.img-right:hover {
+    transform: translate(-300px, 150px) scale(1.8);
+    margin-left: 100px;
+    margin-bottom: 300px;
+
+}
+
+/* styling the text  */
+.textContainer {
+    width: 90%;
+    font-size: larger;
+    margin-top: 30px;
+}

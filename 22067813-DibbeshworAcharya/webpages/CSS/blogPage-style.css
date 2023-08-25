@@ -1,0 +1,76 @@
+/* Section tag contains the wrtten part of the blog  */
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/* this targets the footer which has our logo and a reference link  */
+footer {
+    text-align: center;
+    background-color: #00674b;
+
+}
+
+/* to change the reference link in footer */
+footer a {
+    position: relative;
+    left: 35%;
+    color: black;
+}
+
+/* to change the position of the link in footer tag  */
+footer span {
+    position: relative;
+    left: 5%;
+}
+
+/* changes the text size of the blog */
+p {
+    font-size: 23px;
+}
+
+/* this part wraps the introdution part of the blog  */
+.Blog-Introduction {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 13px;
+    background-image: url(../../images/BlogFront.jpg);
+    background-color: rgba(255,255,255,1);
+    border-radius: 18px;
+}
+
+/* this div wraps the positive impacts  */
+.blog-positiveImpacts {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 13px;
+    background-image: url(../../images/BlogFront1.jpg);
+    background-color: rgba(255,255,255,1);
+    border-radius: 18px;
+}
+
+/* this div wraps the negative impacts  */
+.blog-NegativeImpacts {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 13px;
+    background-image: url(../../images/BlogFront.jpg);
+    background-color: rgba(255,255,255,1);
+    border-radius: 18px;
+}
+
+/* this div wraps the impacts on bonsai sales  */
+.blog-ImpactOnBonsai {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 13px;
+    background-image: url(../../images/BlogFront3.jpg);
+    background-color: rgba(255,255,255,1);
+    border-radius: 18px;
+}
+
+.blog-conclusion {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 13px;
+    background-image: url(../../images/BlogFront.jpg);
+    background-color: rgba(255,255,255,1);
+    border-radius: 18px;
+    margin-bottom: 20px;
+}

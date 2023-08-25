@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Dibbeshwor Acharya"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="../CSS/cartPage-style.css" />
+    <link rel="icon" href="../../../22067800-SakchyamThapa/logo/png/logo-no-background.png" />
+    <link rel="stylesheet" href="../css/header-style.css" />
+    <script src="../JavaScript/CartPage.js"></script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: #f6f6f6f6;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!--The header tag wraps the topmost part i.e. the header of the page-->
+    <header>
+        
+      <!--This div wraps the middle part of the header-->
+      <div class="header-content middle">
+          <ul>
+              <!--The middle-links class is given so that transform can be applied to only the specified links and not the image-->
+              <li><a href="../../../22067800-SakchyamThapa/Code/index.html"><img src="../../logo/png/logo-white-removebg.png" alt="main logo" style="width: 150px; overflow: hidden;" id="logo-header"></a></li> <!--Inline css was used to override the external css for width-->
+              <li class="middle-links"><a href="../../../22067800-SakchyamThapa/Code/index.html"">Home</a></li>
+              <li class="middle-links"><a href="../../../22067759-RoshaniKarki/Product.html">Products</a></li>
+              <li class="middle-links"><a href="./feedPage.html"> Feed</a></li>
+              
+              <li class="middle-links" ><a href="../../../22067759-RoshaniKarki/blog.html">Blog</a></li>
+              <li class="middle-links"><a href="../../../22067800-SakchyamThapa/Code/potfolio.html">About Us</a></li>
+              <li class="middle-links"><a href="./referencePage.html">References</a></li>
+              <li class="middle-links"><a href="./feedbackPage.html">Feedback</a></li>
+
+          </ul>
+      </div>
+  
+  
+      <!--This div wraps the right part of the header-->
+      <div class="header-content  right">
+          <img src="../../icons/header-icons/search.svg" alt="search icon">
+          <a href=""><img src="../../icons/header-icons/user.svg" alt="user icon"></a>
+          <a href="./cartPage.html"><img src="../../icons/header-icons/shopping-cart.svg" alt="shopping cart icon"></a>
+          
+      </div>
+  </header>
+
+<!-- Small container wraps the whole of cart page including products excluding the buy <button></button> -->
+    <div class="small-container">
+
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Total</th>
+          <th>Subtotal</th>
+        </tr>
+
+        <tr>
+          <td>
+            <!-- the card info class contains individual products-->
+            <div class="cart-info">
+              <img src="../../../22067759-RoshaniKarki/IMAGES/2.Miniature Shimpaku Juniper(1).jpg" alt="">
+              <div class="product-details">
+                <p>Product Name</p>
+                <small>Price</small>
+                <ul>
+                  <li>features</li>
+                  <li>features</li>
+                  <li>features</li>
+                  <li>features</li>
+                </ul>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input type="number" name="quantity" id="quantity" value="1">
+          </td>  
+          <td class = "subtotal">$123</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="../../../22067759-RoshaniKarki/IMAGES/10.Boxwood.jpg" alt="">
+              <div class="product-details">
+                <p>Product Name</p>
+                <small>Price</small>
+                <ul>
+                  <li>features</li>
+                  <li>features</li>
+                  <li>features</li>
+                  <li>features</li>
+                </ul>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input type="number" name="quantity" id="quantity" value="1">
+          </td>  
+          <td class = "subtotal">$123</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="../../../22067759-RoshaniKarki/IMAGES/13.Ficus microcarpa.jpg" alt="">
+              <div class="product-details">
+                <p>Product Name</p>
+                <small>Price</small>
+                <ul>
+                  <li>features</li>
+                  <li>features</li>
+                  <li>features</li>
+                  <li>features</li>
+                </ul>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input type="number" name="quantity" id="quantity" value="1">
+          </td>  
+          <td class = "subtotal">$123</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- checkout container wraps the checkout options -->
+    <div class="checkout-container">
+      <a href="#">Hire a expert!</a>
+      <button type="button" onclick="checkout()">Checkout</button>
+    </div>
+
+  </body>
+</html>

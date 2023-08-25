@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Dibbeshwor Acharya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="feed, bonsai, updates, community">
+    <link rel="stylesheet" href="../CSS/feed-style.css">
+    <link rel="stylesheet" href="../css/header-style.css">
+    <link rel="icon" href="../../../22067800-SakchyamThapa/logo/png/logo-no-background.png" />
+    
+
+    <title>Feed</title>
+
+    <!--This style tag will have the universal selector and the body tag-->
+    <style>
+
+        * {
+            box-sizing: border-box; /*Makes sure that margin and padding is also included in width and height values*/
+        }
+
+        body {
+            margin: 0;
+            background-color: #f6f6f6;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+
+<!--The header tag wraps the topmost part i.e. the header of the page-->
+    <div class="main-content-page">
+        <header>
+        
+            <!--This div wraps the middle part of the header-->
+            <div class="header-content middle">
+                <ul>
+                    <!--The middle-links class is given so that transform can be applied to only the specified links and not the image-->
+                    <li><a href="../../../22067800-SakchyamThapa/Code/index.html"><img src="../../logo/png/logo-white-removebg.png" alt="main logo" style="width: 150px; overflow: hidden;" id="logo-header"></a></li> <!--Inline css was used to override the external css for width-->
+                    <li class="middle-links"><a href="../../../22067800-SakchyamThapa/Code/index.html"">Home</a></li>
+                    <li class="middle-links"><a href="../../../22067759-RoshaniKarki/Product.html">Products</a></li>
+                    <li class="middle-links header-active"><a href="./feedPage.html"> Feed</a></li>
+                    
+                    <li class="middle-links" ><a href="../../../22067759-RoshaniKarki/blog.html">Blog</a></li>
+                    <li class="middle-links"><a href="../../../22067800-SakchyamThapa/Code/potfolio.html">About Us</a></li>
+                    <li class="middle-links"><a href="./referencePage.html">References</a></li>
+                    <li class="middle-links"><a href="./feedbackPage.html">Feedback</a></li>
+
+                </ul>
+            </div>
+        
+        
+            <!--This div wraps the right part of the header-->
+            <div class="header-content  right">
+                <img src="../../icons/header-icons/search.svg" alt="search icon">
+                <a href=""><img src="../../icons/header-icons/user.svg" alt="user icon"></a>
+                <a href="./cartPage.html"><img src="../../icons/header-icons/shopping-cart.svg" alt="shopping cart icon"></a>
+                
+            </div>
+        </header>
+
+        <!--This section tag is for the main section of the webpage that contains all the main contents-->
+        <section class="main-container">
+
+            <!-- button to view previous slide  -->
+            <a class="back" onclick="prevSlide()" style="margin-right: 10px;">&#10094</a>
+
+            <!-- main post container -->
+            <div class="post-container active" id="post1" >
+
+                <!-- post text along with buttons -->
+                <div class="post-content">
+                    <h2 style="text-align: center;">A mark of eternity</h2>
+                    <p>
+                        Bought this bonsai 3 years ago from this very website. It was a challenge to learn so many new things
+                        and implement them all, but at the end it was all worth it. Once you connect with your bonsai, you learn 
+                        all of its needs and can communicate with it.
+                    </p>
+
+                    <div class="post-interaction">
+                        <a href="../../../22067759-RoshaniKarki/Product.html"><button>Buy Now</button></a>
+
+                        <button>Learn More</button>
+                    </div>
+
+                </div>
+
+                <!-- image for post -->
+                <div class="post-photo">
+                    <img src="../../images/bonsai-1.jpg " alt="bonsia photo" style="width: 100%; height: auto;">
+                </div>
+            </div>
+
+            <div class="post-container" id="post2">
+
+                <div class="post-content">
+                    <h2 style="text-align: center;">It takes dedication</h2>
+                    <p>
+                        I now realize that i was not prepared to take care of this alone. I bought this about 3 months ago thinking
+                        it would be easy. But, I now know how much of dedication and hardwork it takes to properly raise a bonsai. ThankYou
+                        origin bonsai for providing me with the guidance and personell needed to learn everything there is.
+                    </p>
+
+                    <div class="post-interaction">
+                        <a href="../../../22067759-RoshaniKarki/Product.html"><button>Buy Now</button></a>
+
+                        <button>Learn More</button>
+                    </div>
+
+                </div>
+
+                <div class="post-photo">
+                    <img src="../../images/feed-page2.jpg" alt="bonsia photo" style="width: 100%; height: auto;">
+                </div>
+            </div>
+
+            <div class="post-container" id="post3">
+
+                <div class="post-content">
+                    <h2 style="text-align: center;">Its an art</h2>
+                    <p>
+                        Many people dive right in and buy a new bonsai without realizing the effort they need to put. Its like 
+                        raising a child. You must constantly care and tend to the bonsai, otherwise your efforts will all go into 
+                        vain. I recommend hiring an expert from origin while buying a bonsai to make sure that you are up for the task.
+                    </p>
+
+                    <div class="post-interaction">
+                        <a href="../../../22067759-RoshaniKarki/Product.html"><button>Buy Now</button></a>
+
+                        <button>Learn More</button>
+                    </div>
+
+                </div>
+
+                <div class="post-photo">
+                    <img src="../../images/bonsai-test.jpg" alt="bonsia photo" style="width: 100%; height: auto;">
+                </div>
+            </div>
+
+            <div class="post-container" id="post4">
+
+                <div class="post-content">
+                    <h2 style="text-align: center;">Forever Grateful</h2>
+                    <p>
+                        My grandfather bought this bonsai five years ago from origin. I must say, i was not that 
+                        interesetd in bonsai raising. But as time passed by grandfather taught me everything about it and
+                        my interest in bonsai started growing. We would tend to this beautiful tree together and make memories. 
+                        He passed away recently but this bonsai will allways be there, carrying his will and spirit. Thankyou Origin!
+                    </p>
+
+                    <div class="post-interaction">
+                        <a href="../../../22067759-RoshaniKarki/Product.html"><button>Buy Now</button></a>
+
+                        <button>Learn More</button>
+                    </div>
+
+                </div>
+
+                <div class="post-photo">
+                    <img src="../../images/feed-page3.jpg" alt="bonsia photo" style="width: 100%; height: auto;">
+                </div>
+            </div>
+
+            <!-- button to show previous post -->
+            <a class="next" onclick="nextSlide()" style="margin-left:10px;">&#10095</a>
+
+            
+        </section>
+    </div>
+    <!-- JavaScript to change the slides -->
+    <script>
+
+        var content = document.querySelectorAll(".post-content"); //selects all elements with the class "post-content"
+
+        var x = 0; //x shows the current post number
+        var y = 4; //y shows the total number of posts
+
+        //nextSlide function scrolls to the next post
+        function nextSlide() {
+            document.getElementById("post" + (x+1)).classList.remove("active"); //selects the current post and removes the active class which contains the display block
+            x = (x + y + 1) % y; //this changes the value of x to the next post and reverts it to 1 if x exceeds the value of number of posts 
+
+            document.getElementById("post" + (x+1)).classList.add("active") //selects the post next to the current oone and adds the current class 
+        }
+
+        //prevSlide function scrolls back to the previous slide
+        function prevSlide() {
+            document.getElementById("post" + (x+1)).classList.remove("active"); //selects the current post and removes the active class
+            x = (x + y - 1) % y //changes the value of x to the post previous to the current one and reverts it to 1 if x is less than 0
+
+            document.getElementById("post" + (x+1)).classList.add("active"); //selects the previous post and adds the active class
+        }
+    </script>
+        
+</body>
+</html>
